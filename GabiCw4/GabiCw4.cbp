@@ -34,7 +34,6 @@
 		</Compiler>
 		<Unit filename="AnalizatorSygnalu.h" />
 		<Unit filename="Probka.h" />
-		<Unit filename="Sygnal.h" />
 		<Unit filename="SygnalLoader.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

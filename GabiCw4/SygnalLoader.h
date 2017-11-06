@@ -1,7 +1,7 @@
 #ifndef _SygnalLoader_h_
 #define _SygnalLoader_h_
 /*====================*/
-#include "Sygnal.h"
+#include "SygnalProbkowany.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -10,12 +10,12 @@ class SygnalLoader
 {
 public:
 	SygnalLoader() {}
-	Sygnal wczytajSygnal( string _nazwaPliku )
+	SygnalProbkowany wczytajSygnalProbkowany( string _nazwaPliku )
 	{
 		ifstream plik;
         plik.open( _nazwaPliku.c_str(), ios::in );
         string linia;
-        Sygnal s;
+        SygnalProbkowany s;
         double liczba1, liczba2;
         char znak;
         while ( getline ( plik, linia ) )
@@ -26,7 +26,7 @@ public:
         plik.close();
         return s;
 	}
-	void zapiszSygnal( Sygnal& _sygnal, string _nazwaPliku )
+	void zapiszSygnalProbkowany( SygnalProbkowany& _sygnal, string _nazwaPliku )
 	{
 		ofstream plik;
 		plik.open( _nazwaPliku.c_str(), ios::out );

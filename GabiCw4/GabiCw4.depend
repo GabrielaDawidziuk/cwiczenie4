@@ -24,3 +24,28 @@
 	<string>
 	<fstream>
 
+1509970134 source:c:\users\admin\documents\github\cwiczenie4\gabicw4\main.cpp
+	"AnalizatorSygnalu.h"
+	"SygnalProbkowany.h"
+	"Probka.h"
+	"SygnalLoader.h"
+	<iostream>
+
+1509969717 c:\users\admin\documents\github\cwiczenie4\gabicw4\analizatorsygnalu.h
+	"SygnalProbkowany.h"
+	<iostream>
+
+1509971438 c:\users\admin\documents\github\cwiczenie4\gabicw4\sygnalprobkowany.h
+	"Probka.h"
+	<iostream>
+	<vector>
+
+1509968352 c:\users\admin\documents\github\cwiczenie4\gabicw4\probka.h
+	<iostream>
+
+1509969775 c:\users\admin\documents\github\cwiczenie4\gabicw4\sygnalloader.h
+	"SygnalProbkowany.h"
+	<iostream>
+	<string>
+	<fstream>
+

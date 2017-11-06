@@ -1,14 +1,14 @@
 #ifndef _AnalizatorSygnalu_h_
 #define _AnalizatorSygnalu_h_
 /*=========================*/
-#include "Sygnal.h"
+#include "SygnalProbkowany.h"
 #include <iostream>
 using namespace std;
 class AnalizatorSygnalu
 {
 public:
 	AnalizatorSygnalu() {}
-	double dlugosc( const Sygnal& _sygnal )
+	double dlugosc( const SygnalProbkowany& _sygnal )
 	{
 		double _min = _sygnal[ 1 ].x;
 		double _max = _sygnal[ 1 ].x;
@@ -22,7 +22,7 @@ public:
 		return _max - _min;
 	}
 
-	double minimum( const Sygnal& _sygnal )
+	double minimum( const SygnalProbkowany& _sygnal )
 	{
 		double _min = _sygnal[ 1 ].x;
 		for ( int i = 1; i < _sygnal.iloscProbek() - 2; i++ )
@@ -31,7 +31,7 @@ public:
 		return _min;
 	}
 
-	double maksimum( const Sygnal& _sygnal )
+	double maksimum( const SygnalProbkowany& _sygnal )
 	{
 		double _max = _sygnal[ 1 ].x;
 		for ( int i = 1; i < _sygnal.iloscProbek() - 2; i++ )
@@ -40,7 +40,7 @@ public:
 		return _max;
 	}
 
-	double srednia( const Sygnal& _sygnal )
+	double srednia( const SygnalProbkowany& _sygnal )
 	{
 		double m = 0.0;
 		for ( int i = 1; i < _sygnal.iloscProbek() - 2; i++ )
@@ -50,7 +50,7 @@ public:
 		return m;
 	}
 
-	double calka( const Sygnal& _sygnal )
+	double calka( const SygnalProbkowany& _sygnal )
 	{
 		double calka = 0, dt = 0, dpole = 0;
 	    for (int i = 1; i < _sygnal.iloscProbek() - 2; i++ )
